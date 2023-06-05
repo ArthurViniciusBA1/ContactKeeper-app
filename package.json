@@ -10,17 +10,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hookform/resolvers": "^2.9.10",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.1.0",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.3",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@types/react-input-mask": "^3.0.2",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "axios": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.40.0",
     "react-icons": "^4.7.1",
+    "react-input-mask": "^2.0.4",
     "react-loading": "^2.0.3",
     "react-router-dom": "^6.4.5",
     "react-toastify": "^9.1.1",
-    "styled-components": "^5.3.6",
+    "styled-components": "^6.0.0-rc.3",
     "zod": "^3.21.4"
   },
   "devDependencies": {
