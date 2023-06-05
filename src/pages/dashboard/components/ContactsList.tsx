@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { api } from "../../../services/api";
+import { StyledContactList } from "../style";
+import ContactListCard from "./ContactListCard";
 
-interface iContact {
+export interface iContact {
   id: string;
   name: string;
   email: string;
@@ -23,10 +25,10 @@ export default function ContactsList() {
   }, []);
 
   return (
-    <ul>
-      {contacts.map((task) => (
-        <li key={task.id}>{task.name}</li>
+    <StyledContactList>
+      {contacts.map((contact) => (
+        <ContactListCard contact={contact} key={contact.id} />
       ))}
-    </ul>
+    </StyledContactList>
   );
 }

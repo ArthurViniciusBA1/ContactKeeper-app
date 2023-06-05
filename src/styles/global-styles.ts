@@ -13,7 +13,7 @@ export default createGlobalStyle`
     --green-1: #c8e6c9;
 
     --gray-9: #151515;
-    --gray-8: #424242;
+    --gray-8: #252525;
     --gray-7: #616161;
     --gray-6: #757575;
     --gray-5: #9e9e9e;
@@ -46,6 +46,7 @@ export default createGlobalStyle`
   body,html{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
   }
 
   body {

@@ -5,8 +5,7 @@ export default function DashboardPage() {
   return (
     <DashboardContainer>
       <header>
-        <h1>Meus contatos</h1>
-        
+        <h1>Contact Keeper</h1>
       </header>
 
       <main>
