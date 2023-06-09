@@ -2,15 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
    :root {
-    --green-9: #1b5e20;
-    --green-8: #2e7d32;
-    --green-7: #388e3c;
-    --green-6: #43a047;
-    --green-5: #4caf50;
-    --green-4: #66bb6a;
-    --green-3: #81c784;
-    --green-2: #a5d6a7;
-    --green-1: #c8e6c9;
+    --blue-9: #0d47a1;
+    --blue-8: #1565c0;
+    --blue-7: #1976d2;
+    --blue-6: #1e88e5;
+    --blue-5: #2196f3;
+    --blue-4: #42a5f5;
+    --blue-3: #64b5f6;
+    --blue-2: #90caf9;
+    --blue-1: #bbdefb;
+
 
     --gray-9: #151515;
     --gray-8: #252525;
@@ -67,5 +68,9 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  input {
+    padding-left:  30px !important; 
   }
 `;

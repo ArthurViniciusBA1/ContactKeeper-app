@@ -1,8 +1,8 @@
-import { useAuth } from "../hooks/useAuth";
 import { Outlet } from "react-router-dom";
+import { useAuthContext } from "../providers/AuthProvider";
 
 export default function ProtectedRoutes() {
-  const { loading } = useAuth();
+  const { loading } = useAuthContext();
 
-  return loading ? <div>Carregando</div> : <Outlet />;
+  return loading ? <div>Carregando...</div> : <Outlet />;
 }

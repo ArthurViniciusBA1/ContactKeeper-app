@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { StyledContactItem } from "../style";
 import { iContact } from "./ContactsList";
 import { BsTelephoneFill } from "react-icons/bs";
@@ -5,9 +6,10 @@ import { MdEmail } from "react-icons/md";
 
 interface iProps {
   contact: iContact;
+  toggleModal: (contact: iContact) => void;
 }
 
-export default function ContactListCard({ contact }: iProps) {
+export default function ContactListCard({ contact, toggleModal }: iProps) {
   function phoneOnClick() {
     window.open(`tel:${contact.telephone}`);
   }
@@ -16,12 +18,14 @@ export default function ContactListCard({ contact }: iProps) {
     window.open(`mailto:${contact.email}`);
   }
 
+  const toggle = () => toggleModal(contact);
+
   const displayName =
     contact.name.length > 15 ? contact.name.slice(0, 15) + "..." : contact.name;
 
   return (
     <StyledContactItem>
-      <div className="contact-info">
+      <div className="contact-info" onClick={toggle}>
         <div>
           <h3>{displayName}</h3>
         </div>

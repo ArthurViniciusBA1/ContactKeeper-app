@@ -7,16 +7,31 @@ export const DashboardContainer = styled.div`
 
   gap: 1rem;
 
+  h1 {
+    cursor: pointer;
+  }
+
   > header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     padding: 2rem;
 
     height: 10rem;
 
-    background-color: var(--green-9);
+    background-color: var(--blue-9);
+  }
+
+  > header > button {
+    height: 100%;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+  }
+
+  path {
+    height: 30px;
   }
 
   > main {
@@ -55,6 +70,8 @@ export const StyledContactItem = styled.li`
     gap: 0.75rem;
 
     width: 30rem;
+
+    cursor: url("./pencil.png"), default;
   }
 
   .contact-info > div {
