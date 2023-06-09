@@ -2,7 +2,7 @@
     <h1>
     Contact Keeper
     </h1>
-    <p>A Contact Keeper é uma API de simulação de agenda desenvolvida em NestJS, utilizando Prisma, Bcrypt para criptografia de senha e React no front</p>
+    <p>A Contact Keeper é uma API de simulação de agenda desenvolvida em NestJS, utilizando Prisma, BcryptJS para criptografia de senha e React no front</p>
 </div>
 
 <br>
@@ -11,11 +11,10 @@
     <h2>
     Instalando as dependências
     </h2>
-    <p>Para inciar este projeto, é necessário instalar as dependências. Portanto você deve utilizar o comando abaixo para instalar as dependências:</p>
+    <p>Para iniciar este projeto, é necessário instalar as dependências. Utilize o comando abaixo para instalar as dependências:</p>
 </div>
 
 ```bash
-# instalando as dependências
 # caso use npm
 npm run i
 
@@ -31,7 +30,6 @@ yarn
 </div>
 
 ```bash
-## rodando a aplicação localmente
 # caso use npm
 npm run dev
 
