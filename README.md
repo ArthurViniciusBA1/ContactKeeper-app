@@ -31,9 +31,6 @@ yarn
 </div>
 
 ```bash
-# acessando a pasta do frontend
-cd front
-
 ## rodando a aplicação localmente
 # caso use npm
 npm run dev
